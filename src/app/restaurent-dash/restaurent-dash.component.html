@@ -1,0 +1,98 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Restaurent Record App</h2>
+        <div class="d-flex">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Restaurent</button>
+        </div>
+    </div>
+</nav>
+<!-- Jumbotron start -->
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold">Restaurent Record</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap,</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      </div>
+    </div>
+  </div>
+<!-- jumbotron end -->
+<!-- Table Shown here -->
+
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">Restaurent Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address </th>
+            <th scope="col">Services</th>
+            <th scope="col">Action</th>  
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Badnam</td>
+            <td>badnam@gmail.com</td>
+            <td>0123456789</td>
+            <td>Location location </td>
+            <td>Chai & Coffe</td>
+            <td>
+                <button class="btn btn-info">Edit</button>&nbsp; 
+                <button class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal start-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form start -->
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" placeholder="Restaurant Name Here" class="form-control" id="exampleInputname1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Email ID</label>
+              <input type="email" class="form-control" placeholder="Restaurant Email Id" id="exampleInputemail1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mobile No.</label>
+                <input type="number" class="form-control" placeholder="Restaurant Mobile no." id="exampleInputmobile1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Address</label>
+                <input type="text" class="form-control" placeholder="Restaurant Address" id="exampleInputaddress1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Services</label>
+                <input type="text" class="form-control" placeholder="Restaurant Services" id="exampleInputservices1">
+              </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- Form End -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal End-->
